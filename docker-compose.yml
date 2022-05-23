@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  bitcoind-main:
+#    image: "kylemanna/bitcoind:latest"
+    image: lncm/bitcoind:v23.0
+    ports:
+      - 8333:8333
+      - 8332:8332
+    volumes:
+#      - ~/.bitcoin/:/bitcoin/.bitcoin/ 
+      - ~/.bitcoin/:/data/.bitcoin/
